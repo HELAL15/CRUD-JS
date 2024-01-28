@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project1</title>
+  <link rel="stylesheet" href="index_style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="animate.css-main/animate.css">
+</head>
+<body>
+  
+  <div class="container py-1 pt-5">
+
+    <div class="form-group">
+      <label for="productName">productName :</label>
+      <input type="text" name="userName" id="productName" class="my-2 form-control">
+  </div>
+
+    <div class="form-group">
+      <label for="productPrice">productPrice :</label>
+      <input type="number" name="productPrice" id="productPrice" class="my-2 form-control">
+  </div>
+
+    <div class="form-group">
+      <label for="productCategory">productCategory :</label>
+      <input type="text" name="category" id="productCategory" class="my-2 form-control">
+  </div>
+
+    <div class="form-group">
+      <label for="productDesc">productDesc :</label>
+      <textarea name="desc" id="productDesc" class="my-2 form-control"></textarea>
+  </div>
+
+    <button onclick="addProduct()" class="btn btn-primary my-2" id="addBtn">add product</button>
+  </div>
+
+  <div class="w-50 py-3 m-auto">
+    <input onkeyup="search(this.value)" placeholder="search ny product name.." class="form-control">
+    <div class="w-100 p-3" id="searchResult"></div>
+  </div>
+
+  <div class="container">
+
+    <table class="table text-center">
+      <thead>
+        <th>index</th>
+        <th>productName</th>
+        <th>productPrice</th>
+        <th>productCategory</th>
+        <th>productDesc</th>
+        <th>update</th>
+        <th>delete</th>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+<script src="main.js"></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
